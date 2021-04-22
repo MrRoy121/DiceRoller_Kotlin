@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dice rolling app</string>
+    <string name="dice_rolling_app">DICE ROLLING APP</string>
+    <string name="_4_sided_dice">4 sided dice</string>
+    <string name="_6_sided_dice">6 sided dice</string>
+    <string name="_8_sided_dice">8 sided dice</string>
+    <string name="_10_sided_dice">10 sided dice</string>
+    <string name="_12_sided_dice">12 sided dice</string>
+    <string name="_20_sided_dice">20 sided dice</string>
+    <string name="roll_dice_once">Roll dice Once</string>
+</resources>
