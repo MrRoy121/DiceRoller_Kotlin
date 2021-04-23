@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="@string/dice_rolling_app"
+            android:textColor="#3F51B5"
+            android:textSize="25sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/textview"
+            app:layout_editor_absoluteX="-24dp">
+
+
+            <RadioButton
+                android:id="@+id/side4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_sided_dice"
+                tools:ignore="InvalidId"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="108dp" />
+
+            <RadioButton
+                android:id="@+id/side6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_sided_dice"
+                tools:ignore="MissingConstraints,UnknownId"
+                app:layout_constraintTop_toBottomOf="@+id/side4"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="156dp" />
+
+            <RadioButton
+                android:id="@+id/side8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_8_sided_dice"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/side6"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <RadioButton
+                android:id="@+id/side10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_10_sided_dice"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/side8"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="252dp" />
+
+            <RadioButton
+                android:id="@+id/side12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_12_sided_dice"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/side10"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="300dp" />
+
+            <RadioButton
+                android:id="@+id/side20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_20_sided_dice"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/side12"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="348dp" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/mynum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:autofillHints="#c0c0c0"
+            android:hint="Put Your Own Number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/roll_dice_once"
+            android:layout_gravity="center">
+
+        </Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Roll dice second time"
+            android:layout_gravity="center">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/ans1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/ans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>
+
